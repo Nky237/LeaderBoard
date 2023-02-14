@@ -10,7 +10,7 @@ const Score = () => {
                 <div className='navy' key={score.id}>
                     <h3>{score.name}</h3>
                     <p>Has a total score of {score.salary}</p>
-                    <Link to='/'>See more</Link>
+                    <Link to={score.id.toString()}>See more</Link>
                 </div>
             ))
         }

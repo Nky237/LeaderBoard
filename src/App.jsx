@@ -15,7 +15,7 @@ import ScoreLayout from './layouts/ScoreLayout'
 // PAGES IMPORT
 import Home from './pages/Home'
 import Score, { scoreLoader } from './pages/Score/Score'
-import ScoreDetails from './pages/Score/ScoreDetails'
+import ScoreDetails, { scoreDetailsLoader } from './pages/Score/ScoreDetails'
 import Contact from './pages/help/Contact'
 import Faq from './pages/help/Faq'
 
@@ -34,7 +34,10 @@ function App() {
           <Route index element = {<Score />} 
           loader = {scoreLoader}
           />  
-          <Route path='details' element = {<ScoreDetails />} />  
+          <Route path=':id' 
+          element = {<ScoreDetails />}
+          loader = {scoreDetailsLoader}
+          />  
         </Route>
       </Route>
     )
