@@ -34,6 +34,7 @@ button {
 header{
   display: flex;
   justify-content: space-between;
+  height: 50px;
 }
 header nav {
   display: flex;
@@ -43,6 +44,7 @@ header nav {
 header h1 {
   margin-right: auto;
   border-bottom: 3px solid var(--primary);
+  font-size: 27px;
 }
 header nav a{
   text-decoration: none;
@@ -51,6 +53,17 @@ header nav a{
 }
 header nav a.active {
   background: var(--primary);
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap:1rem;
+}
+.logo img{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
 }
 /* help layout */
 .help-layout nav {
@@ -80,7 +93,7 @@ header nav a.active {
   margin: 20px 0;
 }
 
-/* contact form */
+/* score form */
 form {
   margin-top: 30px;
 }
