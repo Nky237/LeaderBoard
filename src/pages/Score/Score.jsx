@@ -3,10 +3,12 @@ import { Link, useLoaderData } from 'react-router-dom'
 
 const Score = () => {
     const scoress = useLoaderData() 
+    scoress.sort((a,b) => b.salary - a.salary)
   return (
     <div className='careers'>
         {
-            scoress.map(score => (
+            scoress
+            .map(score => (
                 <div className='navy' key={score.id}>
                     <h3>{score.name}</h3>
                     <p>Has a total score of {score.salary}</p>
