@@ -11,7 +11,7 @@ const Score = () => {
             .map(score => (
                 <div className='navy' key={score.id}>
                     <h3>{score.name}</h3>
-                    <p>Has a total score of {score.salary}</p>
+                    <p>Has a total score of {score.Total}</p>
                     <Link to={score.id.toString()}>See more</Link>
                 </div>
             ))
