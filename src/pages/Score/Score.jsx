@@ -3,7 +3,7 @@ import { Link, useLoaderData } from 'react-router-dom'
 
 const Score = () => {
     const scoress = useLoaderData() 
-    scoress.sort((a,b) => b.salary - a.salary)
+    scoress.sort((a,b) => b.Total - a.Total)
   return (
     <div className='careers'>
         {
