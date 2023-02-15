@@ -1,9 +1,7 @@
 import React from 'react'
-import { useLoaderData, useParams } from 'react-router-dom'
 
-const ScoreDetails = () => {
-    const {id} = useParams()
-    const score = useLoaderData()
+const ScoreDetails = ({score}) => {
+
   return (
     <div className='career-details'>
         <h2>More Score Details for {score.name}</h2>
@@ -26,8 +24,3 @@ const ScoreDetails = () => {
 
 export default ScoreDetails
 
-export const scoreDetailsLoader = async({params})=>{
-    const { id } = params
-const res = await fetch(' http://localhost:4000/scoress/' + id)
-return res.json()
-}

@@ -3,16 +3,13 @@ import maleProfile from '../../assets/maleProfile.jpg'
 import femaleProfile from '../../assets/femaleProfile.jpg'
 import { Link } from 'react-router-dom'
 
-
-
-const Score = ({scoress}) => {
-    // const scoress = useLoaderData() 
-    scoress.sort((a,b) => b.Total - a.Total)
+const Backend = ({scoress}) => {
+    scoress.sort((a,b) => a.Total - b.Total)
   return (
     <div>
-        <h1 style={{textAlign: 'center'}}>FRONTEND TRACK</h1>
-        <div className="careers">
-        {
+        <h1 style={{textAlign: 'center'}}>BACKEND TRACK</h1>
+            <div className='careers'>
+            {
             scoress
             .map(score => (
                 <div className='navy' key={score.id}>
@@ -32,15 +29,10 @@ const Score = ({scoress}) => {
                 </div>
             ))
         }
-        </div>
-        
+            </div>
+
     </div>
   )
 }
 
-export default Score
-
-// export const scoreLoader = async()=>{
-//     const res =  await fetch(' http://localhost:4000/scoress')
-//     return res.json()
-// }
+export default Backend

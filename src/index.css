@@ -69,22 +69,22 @@ header h1 {
   border-radius: 50%;
 }
 /* help layout */
-.help-layout nav {
+.help-layout nav, .scoreLayout nav  {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin: 30px 0;
 }
-.help-layout nav a{
+.help-layout nav a, .scoreLayout nav a{
   padding: 10px;
   border: 2px solid white;
   border-radius: 4px;
   text-decoration: none;
 }
-.help-layout nav a:hover{
+.help-layout nav a:hover, .scoreLayout nav a:hover{
   border-color: var(--primary);
 }
-.help-layout nav a.active {
+.help-layout nav a.active, .scoreLayout nav a:active {
   background: var(--primary);
 }
 
@@ -140,10 +140,16 @@ form label span {
 }
 .careers p {
   margin: 0;
+  
 }
+
 .careers > .navy p:last-child {
  font-size: 0.8em;
  color: #bbb;
+}
+.careers img{
+height: 100px;
+width: 100px;  
 }
 
 

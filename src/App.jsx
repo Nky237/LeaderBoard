@@ -14,10 +14,13 @@ import ScoreLayout from './layouts/ScoreLayout'
 
 // PAGES IMPORT
 import Home from './pages/Home'
-import Score, { scoreLoader } from './pages/Score/Score'
-import ScoreDetails, { scoreDetailsLoader } from './pages/Score/ScoreDetails'
+import Score from './pages/Score/Score'
+import ScoreDetails from './pages/Score/ScoreDetails'
 import Contact from './pages/help/Contact'
 import Faq from './pages/help/Faq'
+import { scoress } from './pages/Data'
+import Backend from './pages/Score/Backend'
+import Product from './pages/Score/Product'
 
 function App() {
   const router = createBrowserRouter(
@@ -31,12 +34,14 @@ function App() {
         </Route>
         {/* ROUTING FOR LEADER BOARD */}
         <Route path='leader' element = {<ScoreLayout />}>
-          <Route index element = {<Score />} 
-          loader = {scoreLoader}
+          <Route path='front' element = {<Score scoress = {scoress} />}
           />  
-          <Route path=':id' 
-          element = {<ScoreDetails />}
-          loader = {scoreDetailsLoader}
+          <Route path = 'back' element = {<Backend scoress = {scoress} />}
+          />  
+          <Route path = 'product' element = {<Product scoress = {scoress} />}
+          />  
+          <Route path='det' 
+          element = {<ScoreDetails score = {scoress.id} />}
           />  
         </Route>
       </Route>
