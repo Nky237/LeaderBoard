@@ -169,7 +169,7 @@ form label span {
   .ham{
     display: block;
     padding-top: 10px;
-    margin-right: 20px;
+    margin-right: 19px;
     font-size: 30px;
     z-index: 10;
   }
@@ -196,7 +196,7 @@ form label span {
   }
  
   .logo h1{
-    font-size: 27px;
+    font-size: 25px;
   }
   .logo img{
     height: 50px;
