@@ -1,7 +1,9 @@
 import React from 'react'
+import { useLoaderData, useParams } from 'react-router-dom'
 
-const ScoreDetails = ({score}) => {
-
+const ScoreDetails = () => {
+  const { id } = useParams()
+  const score = useLoaderData()
   return (
     <div className='career-details'>
         <h2>More Score Details for {score.name}</h2>
@@ -23,4 +25,12 @@ const ScoreDetails = ({score}) => {
 }
 
 export default ScoreDetails
+
+// data loader
+export const scoreDetailsLoader = async ({ params }) => {
+  const { id } = params
+
+  const res = await fetch('https://leaderboard-mockapi.onrender.com/scoress/' + id)
+  return res.json()
+}
 

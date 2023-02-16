@@ -213,3 +213,8 @@ width: 100px;
     width: 100%;
   }
 }
+@media only screen and (max-width: 700px){
+  .logo h1{
+    display: none;
+  }
+}

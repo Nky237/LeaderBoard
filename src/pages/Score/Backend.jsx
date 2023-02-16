@@ -1,9 +1,10 @@
 import React from 'react'
 import maleProfile from '../../assets/maleProfile.jpg'
 import femaleProfile from '../../assets/femaleProfile.jpg'
-import { Link } from 'react-router-dom'
+import { Link, useLoaderData } from 'react-router-dom'
 
-const Backend = ({scoress}) => {
+const Backend = () => {
+    const scoress = useLoaderData() 
     scoress.sort((a,b) => a.Total - b.Total)
   return (
     <div>
@@ -36,3 +37,7 @@ const Backend = ({scoress}) => {
 }
 
 export default Backend
+export const scoreLoader = async()=>{
+    const res =  await fetch(' https://leaderboard-mockapi.onrender.com/scoress')
+    return res.json()
+}
