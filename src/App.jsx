@@ -18,8 +18,11 @@ import Score, { scoreLoader } from './pages/Score/Score'
 import ScoreDetails, { scoreDetailsLoader } from './pages/Score/ScoreDetails'
 import Contact from './pages/help/Contact'
 import Faq from './pages/help/Faq'
-import { scoress } from './pages/Data'
+import BackLayout from './layouts/BackLayout'
+import FrontLayout from './layouts/FrontLayout'
+// import { scoress } from './pages/Data'
 import Backend from './pages/Score/Backend'
+import ProductLyout from './layouts/ProductLyout'
 import Product from './pages/Score/Product'
 
 function App() {
@@ -34,19 +37,36 @@ function App() {
         </Route>
         {/* ROUTING FOR LEADER BOARD */}
         <Route path='leader' element = {<ScoreLayout />}>
-          <Route path='front' element = {<Score />}
+          <Route path='fronto' element = {<FrontLayout />}>
+          <Route index element={<Score />} 
           loader = {scoreLoader}
-          />  
-          <Route path = 'back' element = {<Backend />}
-          loader = {scoreLoader}
-          />  
-          <Route path = 'product' element = {<Product />}
-          loader = {scoreLoader}
-          />  
+          />
           <Route path=':id' 
           element = {<ScoreDetails />}
           loader = {scoreDetailsLoader}
           />  
+          </Route >
+          <Route path ='backo' element = {<BackLayout />}>
+         <Route index element = {<Backend />}
+          loader = {scoreLoader}
+          />  
+            <Route path=':id' 
+          element = {<ScoreDetails />}
+          loader = {scoreDetailsLoader}
+          />  
+          </Route>
+          <Route path ='product' element = {<ProductLyout />}>
+         <Route index element = {<Product />}
+          loader = {scoreLoader}
+          />  
+            <Route path=':id' 
+          element = {<ScoreDetails />}
+          loader = {scoreDetailsLoader}
+          />  
+          </Route>
+          
+        
+
         </Route>
       </Route>
     )

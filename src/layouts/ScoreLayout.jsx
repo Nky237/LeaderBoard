@@ -10,9 +10,9 @@ const ScoreLayout = () => {
              tempore vero?</p>
           <nav>
           <nav>
-                <NavLink to='front'>Front End</NavLink>
-                <NavLink to='back'>Back End</NavLink>
-                <NavLink to='product'>Product Design</NavLink>
+                <NavLink to='fronto'>FRONTEND</NavLink>
+                <NavLink to='backo'>BACKEND</NavLink>
+                <NavLink to='product'>PRODUCT DESIGN</NavLink>
             </nav>  
           </nav>
          <Outlet />
