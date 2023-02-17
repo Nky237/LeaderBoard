@@ -193,7 +193,7 @@ width: 100px;
     flex-direction: column;
     position: absolute;
     height: 100vh;
-    top: 40px;
+    top: 44px;
     left: -10px;
     background-color: var(--secondary);
     margin-top: 35px;
@@ -215,6 +215,7 @@ width: 100px;
   .logo img{
     height: 100px;
     width: 100px;
+    padding-top: 7px;
     
   }
 
