@@ -19,9 +19,9 @@ const Rootlayout = () => {
           isOpen ? "expanded" : "Navy"
         }>
               <ul>
-                <NavLink to='/'>HOME</NavLink>
-                <NavLink to='leader'>LEADERBOARD</NavLink>
-                <NavLink to='help'>HELP</NavLink>
+                <NavLink onClick={toggleMenu} to='/'>HOME</NavLink>
+                <NavLink onClick={toggleMenu} to='leader'>LEADERBOARD</NavLink>
+                <NavLink onClick={toggleMenu} to='help'>HELP</NavLink>
               </ul>
             </nav>
             <div className="ham">
