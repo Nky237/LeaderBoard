@@ -199,14 +199,14 @@ width: 100px;
     margin-top: 35px;
     width: 90% !important;
     align-items: center;
-    gap: 6rem;
+    gap: 3rem;
     
    
   }
   .expanded ul a{
     font-size: 20px;
     text-decoration: none;
-    padding: 40px 0;
+    padding: 20px 0;
   }
  
   .logo h1{
