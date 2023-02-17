@@ -9,7 +9,7 @@ const ScoreLayout = () => {
              elit. Perferendis dolor ut laboriosam qui, inventore animi eveniet ex illum 
              tempore vero?</p>
           <nav>
-          <nav>
+          <nav className='scoro'>
                 <NavLink to='fronto'>FRONTEND</NavLink>
                 <NavLink to='backo'>BACKEND</NavLink>
                 <NavLink to='product'>PRODUCT DESIGN</NavLink>

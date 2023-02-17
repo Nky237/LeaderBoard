@@ -30,7 +30,7 @@ export default ScoreDetails
 export const scoreDetailsLoader = async ({ params }) => {
   const { id } = params
 
-  const res = await fetch('https://leaderboard-mockapi.onrender.com/scoress/' + id)
+  const res = await fetch('https://studentapi-lxrp.onrender.com/scoress/' + id)
   return res.json()
 }
 

@@ -192,29 +192,42 @@ width: 100px;
     display: flex;
     flex-direction: column;
     position: absolute;
-    height: 170px;
+    height: 100vh;
     top: 40px;
     left: 0;
     background-color: var(--secondary);
     margin-top: 30px;
     width: 90% !important;
+    align-items: center;
+    padding-top: 90px;
    
+  }
+  .expanded ul a{
+    font-size: 30px;
+    text-decoration: none;
+    padding: 30px 0;
   }
  
   .logo h1{
-    font-size: 25px;
+    display: none;
   }
   .logo img{
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
+    
   }
 
   form{
     width: 100%;
   }
-}
-@media only screen and (max-width: 700px){
-  .logo h1{
-    display: none;
+  .scoro{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% !important;
+  }
+  .scoreLayout h1{
+    font-size: 23px;
   }
 }
+
+

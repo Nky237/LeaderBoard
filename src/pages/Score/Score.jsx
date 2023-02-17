@@ -16,9 +16,7 @@ const Score = () => {
             scoress
             .map(score => (
                 <div className='navy' key={score.id}>
-                    {(score.gender === 'male') ? <img src= {maleProfile} alt = 'male' />
-                    : <img src= {femaleProfile} alt= "female"  />
-                }
+                 <img src={score.image} alt="" />
                     <h3>{score.name}</h3>
                     <p>Has a total score of {score.Total}</p>
                     <div className="details">
@@ -41,6 +39,6 @@ const Score = () => {
 export default Score
 
 export const scoreLoader = async()=>{
-    const res =  await fetch('https://leaderboard-mockapi.onrender.com/scoress')
+    const res =  await fetch('https://studentapi-lxrp.onrender.com/scoress')
     return res.json()
 }

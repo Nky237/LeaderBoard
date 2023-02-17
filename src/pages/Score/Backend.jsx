@@ -4,14 +4,14 @@ import femaleProfile from '../../assets/femaleProfile.jpg'
 import { Link, useLoaderData } from 'react-router-dom'
 
 const Backend = () => {
-    const scoress = useLoaderData() 
-    scoress.sort((a,b) => a.Total - b.Total)
+    const back = useLoaderData() 
+    back.sort((a,b) => b.Total - a.Total)
   return (
     <div>
         <h1 style={{textAlign: 'center'}}>BACKEND TRACK</h1>
             <div className='careers'>
             {
-            scoress
+            back
             .map(score => (
                 <div className='navy' key={score.id}>
                     {(score.gender === 'male') ? <img src= {maleProfile} alt = 'male' />
@@ -38,6 +38,6 @@ const Backend = () => {
 
 export default Backend
 export const scoreLoader = async()=>{
-    const res =  await fetch(' https://leaderboard-mockapi.onrender.com/scoress')
+    const res =  await fetch(' https://studentapi-lxrp.onrender.com/back')
     return res.json()
 }

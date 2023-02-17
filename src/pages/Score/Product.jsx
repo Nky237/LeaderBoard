@@ -1,7 +1,10 @@
 import React from 'react'
 import maleProfile from '../../assets/maleProfile.jpg'
 import femaleProfile from '../../assets/femaleProfile.jpg'
+import man1 from '../../assets/man1.jfif'
+import woman1 from '../../assets/woman1.jfif'
 import { Link, useLoaderData } from 'react-router-dom'
+ 
 
 const Product = () => {
     const scoress = useLoaderData() 
@@ -14,8 +17,8 @@ const Product = () => {
             scoress
             .map(score => (
                 <div className='navy' key={score.id}>
-                    {(score.gender === 'male') ? <img src= {maleProfile} alt = 'male' />
-                    : <img src= {femaleProfile} alt= "female"  />
+                    {(score.gender === 'male') ? <img src= {man1} alt = 'male' />
+                    : <img src= {woman1} alt= "female"  />
                 }
                     <h3>{score.name}</h3>
                     <p>Has a total score of {score.Total}</p>
