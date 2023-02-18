@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import logo from '../assets/logo.jpg'
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { FaTimes } from 'react-icons/fa';
 
 const Rootlayout = () => {
   const [isOpen, setisOpen] = useState(false)
@@ -25,7 +26,8 @@ const Rootlayout = () => {
               </ul>
             </nav>
             <div className="ham">
-            <GiHamburgerMenu onClick={toggleMenu} />
+            {/* <GiHamburgerMenu onClick={toggleMenu} /> */}
+            <p onClick={toggleMenu}>{isOpen? <FaTimes />  : <GiHamburgerMenu /> }</p>
             </div>
         </header>
         <main>

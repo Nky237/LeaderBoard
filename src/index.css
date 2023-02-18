@@ -171,6 +171,8 @@ width: 100px;
 @media only screen and (max-width: 767px){
   body{
     overflow-x: hidden !important;
+    padding: 10px ;
+
   }
   .ham{
     display: block;
@@ -192,8 +194,8 @@ width: 100px;
     display: flex;
     flex-direction: column;
     position: absolute;
-    height: 100vh;
-    top: 44px;
+    height: calc(100vh - 114px);
+    top: 70px;
     left: -10px;
     background-color: var(--secondary);
     margin-top: 35px;
@@ -204,7 +206,7 @@ width: 100px;
    
   }
   .expanded ul a{
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     padding: 20px 0;
   }
@@ -213,9 +215,9 @@ width: 100px;
     display: none;
   }
   .logo img{
-    height: 100px;
-    width: 100px;
-    padding-top: 7px;
+    height: 80px;
+    width: 80px;
+    padding-top: 20px;
     
   }
 
@@ -227,8 +229,15 @@ width: 100px;
     flex-wrap: wrap;
     width: 100% !important;
   }
+  .scoreLayout{
+    width: 100%;
+    
+  }
   .scoreLayout h1{
     font-size: 23px;
+  }
+  .scoreLayout p{
+    font-size: 14px;
   }
 }
 

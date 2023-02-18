@@ -13,13 +13,13 @@ const ScoreDetails = () => {
         <p>Task 4 score is {score.Task4}</p>
         <p>Appraisal 1 score is {score.Appraisal1}</p>
         <p>Appraisal 2 score is {score.Appraisal2}</p>
-        <div className="details">
+        {/* <div className="details">
             <h3>DESCRIPTION</h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, molestias voluptates earum quae vero, molestiae laudantium quia consequatur suscipit rem magnam. Nesciunt deserunt temporibus voluptatem! Enim 
                 modi quod, beatae cumque nostrum ut eaque doloremque blanditiis ipsum esse in sed molestiae.
             </p>
-        </div>
+        </div> */}
     </div>
   )
 }
