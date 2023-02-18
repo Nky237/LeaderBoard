@@ -16,10 +16,8 @@ const Rootlayout = () => {
             <img src={logo} alt="logo" />
             <h1>LEARNABLE</h1>
             </div>
-            <nav  className={
-          isOpen ? "expanded" : "Navy"
-        }>
-              <ul>
+            <nav className={`Navy  ${isOpen && 'active'}`}>
+              <ul >
                 <NavLink onClick={toggleMenu} to='/'>HOME</NavLink>
                 <NavLink onClick={toggleMenu} to='leader'>LEADERBOARD</NavLink>
                 <NavLink onClick={toggleMenu} to='help'>HELP</NavLink>

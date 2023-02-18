@@ -41,7 +41,7 @@ header{
 }
 .Navy ul {
   display: flex;
-  gap: 16px;
+  justify-content: space-between;
   
 }
 header h1 {
@@ -192,34 +192,36 @@ width: 100px;
     z-index: 10;
   }
   .Navy{
-    display: none;
-    
-   
-  
-
-
-
+    position: absolute;
+    right: 0;
+    top: 100px;
+    background-color: var(--secondary);
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
   }
-  .expanded ul{
+
+  .Navy.active {
+    width: 270px;
+  }
+
+  .Navy ul {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    height: calc(100vh - 114px);
-    top: 70px;
-    left: -10px;
-    background-color: var(--secondary);
-    margin-top: 35px;
-    width: 90% !important;
-    align-items: center;
-    gap: 3rem;
+    justify-content: center;
     
-   
   }
-  .expanded ul a{
-    font-size: 18px;
-    text-decoration: none;
-    padding: 20px 0;
+
+  .Navy ul a {
+    /* margin-right: unset; */
+    margin-top: 27px;
+    gap: 9rem !important;
   }
+  .Navy ul a.active{
+    background-color:  var(--secondary);
+  }
+ 
  
   .logo h1{
     display: none;
