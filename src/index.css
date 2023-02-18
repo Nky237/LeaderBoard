@@ -49,8 +49,8 @@ header h1 {
   border-bottom: 3px solid var(--primary);
   font-size: 27px;
 }
-.Navy a{
-  text-decoration: none;
+.Navy ul a{
+  text-decoration: none !important;
   padding: 7px 12px;
   border-radius: 4px;
 }
@@ -160,12 +160,22 @@ width: 100px;
   border-radius: 4px;
   margin: 20px 0;
 }
+.exit{
+ 
+  float: right;
+}
+.exit :first-child{
+  color: red;
+  font-size: 25px;
+  cursor: pointer;
+}
 
 /* RESPONSIVE BAR */
 
 .ham{
   display: none;
 }
+
 
 /* RESPONSIVENESS */
 @media only screen and (max-width: 767px){
@@ -229,6 +239,7 @@ width: 100px;
     flex-wrap: wrap;
     width: 100% !important;
   }
+
   .scoreLayout{
     width: 100%;
     

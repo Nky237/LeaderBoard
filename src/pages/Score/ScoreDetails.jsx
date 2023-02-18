@@ -1,11 +1,19 @@
 import React from 'react'
-import { useLoaderData, useParams } from 'react-router-dom'
+import { NavLink, useLoaderData, useNavigate, useParams } from 'react-router-dom'
+import { FaTimes } from 'react-icons/fa';
 
 const ScoreDetails = () => {
+  const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+  }
   const { id } = useParams()
   const score = useLoaderData()
   return (
     <div className='career-details'>
+      <div className="exit">
+        <FaTimes onClick={goBack} />
+      </div>
         <h2>More Score Details for {score.name}</h2>
         <p>Task 1 score is {score.Task1}</p>
         <p>Task 2 score is {score.Task2}</p>

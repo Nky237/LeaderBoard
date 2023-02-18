@@ -4,12 +4,15 @@ import {
    createRoutesFromElements,
    RouterProvider
   } from 'react-router-dom'
-import Helplayout from './layouts/Helplayout'
+
   
   // LAYOUT IMPORT
 import Rootlayout from './layouts/Rootlayout'
 import ScoreLayout from './layouts/ScoreLayout'
-
+import Helplayout from './layouts/Helplayout'
+import ProductLyout from './layouts/ProductLyout'
+import BackLayout from './layouts/BackLayout'
+import FrontLayout from './layouts/FrontLayout'
 
 
 // PAGES IMPORT
@@ -18,11 +21,11 @@ import Score, { scoreLoader } from './pages/Score/Score'
 import ScoreDetails, { scoreDetailsLoader } from './pages/Score/ScoreDetails'
 import Contact from './pages/help/Contact'
 import Faq from './pages/help/Faq'
-import BackLayout from './layouts/BackLayout'
-import FrontLayout from './layouts/FrontLayout'
+
+
 // import { scoress } from './pages/Data'
 import Backend from './pages/Score/Backend'
-import ProductLyout from './layouts/ProductLyout'
+
 import Product from './pages/Score/Product'
 
 function App() {
