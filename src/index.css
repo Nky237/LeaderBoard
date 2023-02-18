@@ -204,12 +204,14 @@ width: 100px;
 
   .Navy.active {
     width: 100%;
+    
   }
 
   .Navy ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     
   }
 
