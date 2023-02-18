@@ -197,7 +197,7 @@ width: 100px;
     top: 100px;
     background-color: var(--secondary);
     width: 0px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 100px);
     transition: all 0.3s ease-in;
     overflow: hidden;
   }
