@@ -68,6 +68,32 @@ header h1 {
   width: 80px;
   border-radius: 50%;
 }
+
+/* Home section */
+.Home{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+.Home h1{
+  text-transform: uppercase !important;
+  text-align: center !important;
+  padding: 20px 0;
+}
+.Home >div{
+  width: 40%;
+
+}
+.Home main{
+  width: 50%;
+}
+.Home img{
+width: 100%;
+object-fit: cover;
+border-radius: 50px;
+height: 300px;
+}
 /* help layout */
 .help-layout nav, .scoreLayout nav  {
   display: flex;
@@ -149,7 +175,8 @@ form label span {
 }
 .careers img{
 height: 100px;
-width: 100px;  
+width: 100px; 
+border-radius: 20px; 
 }
 
 
@@ -235,6 +262,22 @@ width: 100px;
     
   }
 
+  /* Home section */
+.Home{
+  display: flex;
+flex-direction: column;
+}
+
+.Home >div{
+  width: 100%;
+
+}
+.Home main{
+  width: 100%;
+}
+.Home img{
+width: 95%;
+}
   form{
     width: 100%;
   }
